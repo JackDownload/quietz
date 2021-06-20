@@ -15,6 +15,12 @@ export default {
   ],
   plugins: [
   ],
+  modules: [
+    '@nuxt/content'
+  ],
+  content: {
+    // Options
+  },
   components: [
     { path: '~/components', pathPrefix: false },
     { path: '~/icons', pathPrefix: false }

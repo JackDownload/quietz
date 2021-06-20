@@ -10,6 +10,7 @@
     "clean": "rm -rf .nuxt dist node_modules"
   },
   "dependencies": {
+    "@nuxt/content": "^1.14.0",
     "@popperjs/core": "^2.9.2",
     "bootstrap": "^5.0.1",
     "nuxt": "^2.15.7"

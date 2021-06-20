@@ -23,6 +23,7 @@ export default {
         { name: 'progress', text: 'Progress' },
         { name: 'ratio', text: 'Ratio' },
         { name: 'toast', text: 'Toast' }
+        { name: 'blog', text: 'Blog' }
       ]
     }
   }

@@ -22,7 +22,7 @@ export default {
         { name: 'offcanvas', text: 'Offcanvas' },
         { name: 'progress', text: 'Progress' },
         { name: 'ratio', text: 'Ratio' },
-        { name: 'toast', text: 'Toast' }
+        { name: 'toast', text: 'Toast' },
         { name: 'blog', text: 'Blog' }
       ]
     }

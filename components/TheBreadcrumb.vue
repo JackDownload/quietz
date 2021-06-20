@@ -12,7 +12,7 @@
           {{ route.text }}
         </template>
         <template v-else>
-          <NLink :to="{ name: route.name }">{{ route.text }}</NLink>
+          <NLink :to="{ name: route.name }">{{ route.name }}</NLink>
         </template>
       </li>
     </ol>

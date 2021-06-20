@@ -3,7 +3,7 @@
     <TheHeader />
     <TheBreadcrumb />
     <div class="container flex-grow-1">
-      <h1 v-if="hasRouteName">{{ title }}</h1>
+      <h1 v-if="hasRouteName"></h1>
       <Nuxt />
     </div>
     <TheFooter />

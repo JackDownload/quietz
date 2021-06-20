@@ -36,18 +36,14 @@ export default {
     // analyze: true
   },
   generate: {
-    fallback: '404.html',
-    routes: ['/'],
-    routes: function() {
-      const fs = require('fs');
-      const path = require('path');
-      return fs.readdirSync('./content/blog').map(file => {
-        return {
-          route: `/blog/${path.parse(file).name}`, // Return the slug
-          payload: require(`./content/blog/${file}`),
-        };
-      });
+    async routes () {
+      const { $content } = require('@nuxt/content')
+      const files = await $content().only(['path']).fetch()
+
+      return files.map(file => file.path === '/index' ? '/' : file.path)
     },
+    fallback: '404.html',
+    routes: ['/']
   },
   // top level options for packages
   purgeCSS: {
